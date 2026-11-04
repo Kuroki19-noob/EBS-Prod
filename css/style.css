@@ -71,6 +71,91 @@
     color: white;
 }
 
+
+.login {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+.login-form > p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: black;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+#loginButton {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#loginButton:hover {
+    background: white;
+    color:black;
+    border: 1px solid black;
+}
+
+.login-message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-message.error {
+    color: #dc2626;
+}
+
+.login-message.success {
+    color: #16a34a;
+}
+
 /* Responsive layout for mobile */
 @media (max-width: 600px) {
     .navbar {
