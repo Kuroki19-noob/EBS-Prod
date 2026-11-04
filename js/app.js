@@ -12,6 +12,7 @@ else{
     greetings.textContent = ' Guest'
 }});
 
+document.addEventListener('DOMContentLoaded', () => {
 const loginForm = document.getElementById('loginForm'); 
 
 if (loginForm){
@@ -46,4 +47,7 @@ loginForm.addEventListener('submit', (event) => {
         loginMessage.textContent = 'Invalid username or password.';
         loginMessage.className = 'login-message error';
     }
-})};
+})}});
+
+
+
