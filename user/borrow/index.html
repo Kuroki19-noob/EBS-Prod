@@ -33,8 +33,29 @@
       </nav>
     </header>
     <main class="dashboard-wrap">
-    <h1 id="greetings"></h1>
+    <h1 id="greetings" class="greetings"></h1>
+    <section class="borrow-section">
+        <div class="borrow-container">
+          <div class="borrow-title">
+            <h1 style="padding-bottom: 1rem;">Available Equipments</h1>
+          </div>
+          <div class="borrow-content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Equipments</th>
+                  <th>Quantity</th>
+                  <th>Availability</th>
+                  <th>status</th>
+                </tr>
+              </thead>
+              <tbody id="borrow-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
     <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/equipments.js"></script>
     </main>
   </body>
 </html>

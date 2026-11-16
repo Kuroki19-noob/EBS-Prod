@@ -21,9 +21,10 @@ else{
     greetings.textContent = 'Reports Section'
  }
  else{
-    greetings.textContent = 'Dasboard'
+    greetings.textContent = 'Dashboard'
  }
 });
+
 
 
 

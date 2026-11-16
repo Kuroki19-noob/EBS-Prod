@@ -10,7 +10,7 @@ loginForm.addEventListener('submit', (event) => {
         user: {
             username: "lccborrower",
             password: "lccborrower123",
-            role: '/user'                            
+            role: '/user/home'                            
         },
         admin: {
             username: "lccborroweradmin",
