@@ -3,6 +3,7 @@ const quantity = document.getElementById('borrow-quantity')
 const availability = document.getElementById('borrow-availability')
 const statusElement = document.getElementById('borrow-status')
 
+
 const tableContent = {
 
 
@@ -56,6 +57,7 @@ function renderTable() {
       <td>${item.quantity}</td>
       <td>${item.availability}</td>
       <td>${item.status}</td>
+      <td>${item.btn}</td>
     `;
 
     tbody.appendChild(row);
