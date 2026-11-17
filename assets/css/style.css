@@ -16,6 +16,36 @@
     z-index: 1000;
 }
 
+.borrow-btn {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #111;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.borrow-btn:active {
+  transform: scale(0.97);
+}
+
+.borrow-btn:hover {
+  color: black;
+  background-color: white;
+  border: solid 1px black;
+}
+
+
+
+.borrow-btn:disabled {
+  background-color: #999;
+  color: #eee;
+  cursor: not-allowed;
+}
+
 /* Navigation container */
 .navbar {
     max-width: 1200px;

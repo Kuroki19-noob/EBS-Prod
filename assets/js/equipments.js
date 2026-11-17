@@ -44,11 +44,19 @@ function checkStatus(item){
     item.availability  = item.quantity === 0 ? 'False': 'True';
 }
 
+function borrowItem(key) {
+  const item = tableContent[key];
+  if (item.quantity > 0) {
+    item.quantity--;
+    renderTable(); // redraw so the new quantity and status show
+  }
+}
+
 function renderTable() {
   const tbody = document.getElementById('borrow-table-body');
   tbody.innerHTML = '';
 
-  Object.values(tableContent).forEach(item => {
+  Object.values(tableContent).forEach((item,key) => {
     checkStatus(item); 
 
     const row = document.createElement('tr');
@@ -57,12 +65,14 @@ function renderTable() {
       <td>${item.quantity}</td>
       <td>${item.availability}</td>
       <td>${item.status}</td>
-      <td>${item.btn}</td>
+      <td><button class="borrow-btn" data-key="${key}" ${item.quantity === 0 ? 'disabled' : ''}>Borrow</button></td>
     `;
 
+   
     tbody.appendChild(row);
 
   });
 }
+
 
 document.addEventListener('DOMContentLoaded', renderTable);
