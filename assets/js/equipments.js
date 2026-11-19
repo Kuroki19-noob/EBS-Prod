@@ -52,6 +52,8 @@ function borrowItem(key) {
   }
 }
 
+//Equipment Table
+
 function renderTable() {
   const tbody = document.getElementById('borrow-table-body');
   tbody.innerHTML = '';
